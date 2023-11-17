@@ -1,0 +1,132 @@
+html {
+    font-size: 62.5%; /* 16px * 62.5 = 10px = 1rem */
+    box-sizing: border-box;
+  }
+
+  .header {
+    grid-area: header;
+    background-color: #203040;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem;
+    font-size: large;
+  }
+  .header-links a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 1rem;
+    
+  }
+  .header-links a:hover {
+    color: #ff8000;
+    
+  }
+  .main {
+    grid-area: main;
+  }
+  .footer {
+    grid-area: footer;
+    background-color: #203040;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+.product {
+    display: flex;
+    align-items: center;
+    
+    /* padding: 10px; */
+}
+.column-left,
+.column-right {
+    width: 48%; /* Adjust the width as needed */
+}
+.quantity-section {
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+.quantity-section p {
+    margin-right: 10px; /* Adjust the margin as needed */
+}
+
+.quantity-section select {
+    width: 50px; /* Adjust the width as needed */
+}
+.btn-group{
+    text-align: auto;
+}
+.product-name {
+    font-size: 2rem;
+    font-weight: bold;
+    flex-direction: column;
+  }
+  .product-brand {
+    font-size: 2rem;
+    color: #808080;
+  }
+  .product-price {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  .product-rating {
+    font-size: 2rem;
+  }
+
+.product-image {
+    width: 500px; /* Set the width as needed */
+    margin-right: 10px;
+}
+
+.content{
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.product-details {
+    text-align: auto;
+    font-size: large;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+  .grid-container {
+    display: grid;
+    grid-template-areas:
+      'header'
+      'main'
+      'footer';
+    grid-template-columns: 1fr;
+    grid-template-rows: 5rem 1fr 5rem;
+    height: 100%;
+  }
+  .header {
+    grid-area: header;
+    background-color: #203040;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem;
+  }
+  .brand a {
+    color: #ffffff;
+    font-size: 3rem;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  .header-links a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 1rem;
+  }
+  .header-links a:hover {
+    color: #ff8000;
+  }
+
+
+.btn{
+    background-color:goldenrod;
+}

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Sign Up</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
+        header {
+    grid-area: header;
+    background-color: #203040;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem;
+  }
+  .header-links a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 1rem;
+  }
+  .header-links a:hover {
+    color: #ff8000;
+  }
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #28a745;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .brand a {
+    color: #ffffff;
+    font-size: 3rem;
+    font-weight: bold;
+    text-decoration: none;
+  }
+        button:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="grid-container">
+        <header class="header">
+          <div class="brand" >
+            <button  onClick="openMenu()" >
+              &#9776;
+            </button>
+            <a href="index.html">amazona</a>
+          </div>
+
+          <div class="header-links">
+
+            <a href="signin.html">Sign In</a>
+          </div>
+        </header>
+    <form id="signUpForm">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="email">Mobile Number:</label>
+        <input type="mobile" id="mobile" name="mobile" required>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+
+        <button type="button" onclick="signUp()">Sign Up</button>
+    </form>
+
+    <script>
+        function signUp() {
+            var username = document.getElementById("username").value;
+            var email = document.getElementById("email").value;
+            var password = document.getElementById("password").value;
+
+            // Check if the fields are not empty (you can add more validation)
+            if (!username || !email || !password) {
+                alert("Please fill in all fields.");
+                return;
+            }
+
+            // In a real-world scenario, you would send this data to a server for processing and account creation.
+            // For the purpose of this example, we'll just display the collected data in an alert.
+            alert("Account created!\n\nUsername: " + username + "\nEmail: " + email);
+
+            // You can redirect the user to the login page or perform any other action here.
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="product-name1.css">
+    <title>Amazona</title>
+</head>
+
+<body>
+    <div class="grid-container">
+        <header class="header">
+            <div class="brand">
+                <button onClick="openMenu()">
+                    &#9776;
+                </button>
+                <a href="index.html">amazona</a>
+            </div>
+            <div class="header-links">
+                <a href="cart.html">Cart</a>
+                <a href="signin">Sign In</a>
+            </div>
+        </header>
+    </div>
+
+    <div class="product">
+        <figure>
+            <img class="product-image" src="images/d1.jpg" alt="product" />
+
+            <div class="product-name">
+                <figcaption><br>Slim Shirt</figcaption>
+            </div>
+            <div class="product-brand"><figcaption>Nike</figcaption></div>
+            <div class="product-price"><figcaption>₹999</figcaption></div>
+            <div class="product-rating"><figcaption>4.5 Stars (5 Reviews)</figcaption></div>
+        </figure>
+        <div class="column-left">
+            <div class="product-details">
+                <pre style="font-size: x-large;">
+                    <b>Product details</b>
+
+                    <b>Product Dimensions   :</b> 20.3 x 4 x 18 cm; 150 Grams
+                    <b>Date First Available :</b> 12 April 2022
+                    <b>Manufacturer         :</b> NIKE INDIA PVT LTD
+                    <b>ASIN                 :</b> B09XR8CTLF
+                    <b>Item model number    :</b> DM6856
+                    <b>Country of Origin    :</b> Vietnam
+                    <b>Department           :</b> Men
+                    <b>Item Weight          :</b> 150 g
+                    <b>Dimensions LxWxH     :</b> 20.3 x 4 x 18 Centimeters
+                    <b>Generic Name         :</b> Shirt
+                </pre>
+                <div class="column-right">
+                    <div class="quantity-section">
+                        <p>Quantity:</p>
+                        <div style="text-align: left;">
+                            <select id="qtn">
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="btn-group">
+                    <p id="size">Size:</p>
+                    <label><input type="radio" name="size" value="S"> S</label>
+                    <label><input type="radio" name="size" value="M"> M</label>
+                    <label><input type="radio" name="size" value="L"> L</label>
+                    <label><input type="radio" name="size" value="XL"> XL</label>
+                    <label><input type="radio" name="size" value="2XL"> 2XL</label>
+                    <label><input type="radio" name="size" value="3XL"> 3XL</label>
+                </div>
+                <br><button type="button" class="btn" onclick="addToCart()">Add to Cart</button> &nbsp; &nbsp;
+                <button type="button" class="btn" id="buynow" onclick="productDetails()">Buy Now</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Function to add item to cart
+        function addToCart() {
+            var quantity = document.getElementById("qtn").value;
+
+            // Get selected size
+            var size = document.querySelector('input[name="size"]:checked');
+
+            if (size) {
+                size = size.value;
+            } else {
+                alert("Please select a size");
+                return;
+            }
+
+            var productDetails = {
+                name: "Slim Shirt",
+                brand: "Nike",
+                price: "₹999",
+                quantity: quantity,
+                size: size
+            };
+
+            alert("Added to Cart:");
+            console.log(productDetails);
+        }
+
+        
+    </script>
+</body>
+
+</html>

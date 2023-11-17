@@ -1,0 +1,130 @@
+
+
+
+<DOCTYPE html>
+  <html>
+  
+  <head>
+    <link rel="stylesheet" href="style.css">
+    <title>Amazona </title>
+  
+  </head>
+  <body>
+    <div class="grid-container">
+      <header class="header">
+        <div class="brand" >
+          <button  onClick="openMenu()" >
+            &#9776;
+          </button>
+          <a href="index.html">amazona</a>
+        </div>
+
+        <div class="header-links">
+          <a href="cart.html">Cart</a>
+          <a href="signup.html">Sign Up</a>
+          <a href="signin.html">Sign In</a>
+        </div>
+      </header>
+      <aside class="sidebar">
+        <h3>This is sidebar menu</h3>
+        <button class="sidebar-close-button" onClick="closeMenu()"  >X</button>
+        <ul>
+          <li>
+            Shirts
+          </li>
+          <br>
+          <li>
+            Pants
+          </li>
+        </ul>
+      </aside>
+      <main class="main">
+        <div class="content">
+          <ul class="products">
+            <li>
+              <div class="product"> 
+                <img class="product-image" src="images/d1.jpg" alt="product" />
+                <div class="product-name" >
+                  <a href="product-name1.html">
+                  Slim Shirt</a></div>
+                <div class="product-brand">Nike</div>
+                <div class="product-price">₹999</div>
+                <div class="product-rating">4.5 Stars (5 Reviews)</div>
+              </div>
+            </li>
+            <li>
+              <div class="product"> 
+                <img class="product-image" src="images/d2.jpg" alt="product" />
+                <div class="product-name" >
+                  <a href="product-name2.html">
+                  Office Wear Shirt</a></div>
+                <div class="product-brand">Peter England</div>
+                <div class="product-price">₹1400</div>
+                <div class="product-rating">4.3 Stars (20 Reviews)</div>
+              </div>
+            </li>
+            <li>
+              <div class="product"> 
+                <img class="product-image" src="images/d3.jpg" alt="product" />
+                <div class="product-name" >
+                  <a href="product-name3.html">
+                 Casual Wear Shirt</a></div>
+                <div class="product-brand">Raymond</div>
+                <div class="product-price">₹2500</div>
+                <div class="product-rating">4.5 Stars (30 Reviews)</div>
+              </div>
+            </li>
+            <li>
+              <div class="product"> 
+                <img class="product-image" src="images/p1.jpg" alt="product" />
+                <div class="product-name" >
+                  <a href="product-name4.html">
+                  Trouser</a></div>
+                <div class="product-brand">Levis</div>
+                <div class="product-price">₹4000</div>
+                <div class="product-rating">4.6 Stars (50 Reviews)</div>
+              </div>
+            </li>
+            <li>
+              <div class="product"> 
+                <img class="product-image" src="images/p2.jpg" alt="product" />
+                <div class="product-name" >
+                  <a href="product-name5.html">
+                  Office Wear Pant</a></div>
+                <div class="product-brand">Calvin klevin</div>
+                <div class="product-price">₹2300</div>
+                <div class="product-rating">4.2 Stars (20 Reviews)</div>
+              </div>
+            </li>
+            <li>
+              <div class="product"> 
+                <img class="product-image" src="images/p3.jpg" alt="product" />
+                <div class="product-name" >
+                  <a href="product-name6.html">
+                  Slim Jean</a></div>
+                <div class="product-brand">Rebook</div>
+                <div class="product-price">₹3400</div>
+                <div class="product-rating">4.5 Stars (30 Reviews)</div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </main>
+      <footer class="footer">
+        All rights reserved. 
+      </footer>
+    </div>
+    <script>
+      function openMenu() {
+        document.querySelector(".sidebar").classList.add("open") ;
+      }
+      function closeMenu() {
+        document.querySelector(".sidebar").classList.remove("open") ;
+      }
+    </script>
+  
+  </body>
+  
+  
+  </html>
+  </DOCTYPE>
